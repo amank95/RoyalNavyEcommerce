@@ -1,0 +1,17 @@
+.productCard .textPart {
+    transition: transform 0.3s ease-out;
+  }
+
+  /* hovering on text part */
+.productCard:hover .textPart{
+    transform: translateY(-1rem);/*get up on hover*/
+
+}
+
+.productCard:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dark.productCard:hover {
+      box-shadow: rgba(240, 174, 53, 0.5) 0px 6px 20px; /* Light Orange Glow */
+  }
