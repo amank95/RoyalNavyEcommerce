@@ -1,7 +1,8 @@
 
 import axios from 'axios';
 //const DEPLOYED='https://pear-poised-hen.cyclic.app/'
-const LOCALHOST='http://localhost:4000'
+//const LOCALHOST='http://localhost:4000'
+const LOCALHOST='https://royal-navy-backend.vercel.app/'
 
 export const API_BASE_URL = LOCALHOST;
 
