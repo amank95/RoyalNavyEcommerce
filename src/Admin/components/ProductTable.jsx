@@ -176,7 +176,7 @@ const ProductTable = () => {
               {customersProduct?.products?.content?.map((item) => (
                 <TableRow
                   hover
-                  key={item.name}
+                  key={item._id || item.name}
                   sx={{ "&:last-of-type td, &:last-of-type th": { border: 0 } }}
                   
                 >
@@ -200,7 +200,7 @@ const ProductTable = () => {
                       <Typography variant="caption">{item.brand}</Typography>
                     </Box>
                   </TableCell>
-                  <TableCell sx={{ textAlign: "center" }}>{item.category.name}</TableCell>
+                  <TableCell sx={{ textAlign: "center" }}>{item.category?.name}</TableCell>
                   <TableCell sx={{ textAlign: "center" }}>{item.discountedPrice}</TableCell>
                   <TableCell sx={{ textAlign: "center" }}>{item.quantity}</TableCell>
               
