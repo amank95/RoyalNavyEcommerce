@@ -23,7 +23,7 @@ const CustomersTable = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/users'); // Replace with your API URL
+        const response = await axios.get('https://royalnavyecommercebackend-production.up.railway.app/api/users'); // Replace with your API URL
         setUsers(response.data);
       } catch (err) {
         setError('Failed to fetch users');
